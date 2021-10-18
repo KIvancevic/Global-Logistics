@@ -34,7 +34,7 @@ const Layout = ({ children, pageMeta }) => {
           />
         )}
       </Head>
-      <div className="m-0 p-0 w-min-full">
+      <div className="m-0 p-0 w-min-full overflow-x-hidden">
         <Header />
         <main className="m-0 p-0">
           {children}
