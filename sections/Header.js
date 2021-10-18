@@ -5,7 +5,7 @@ const Header = () => {
   const [colorTheme, setTheme] = UserDarkMode();
 
   return (
-    <header className="fixed w-screen border-opacity-25 border-b border-blue-300 dark:border-blue-300 backdrop-filter backdrop-blur-sm  backdrop-contrast-200  bg-footerLight dark:bg-footerDark ">
+    <header className="fixed w-screen border-opacity-25 border-b border-blue-300 dark:border-blue-300 backdrop-filter backdrop-blur-sm  backdrop-contrast-200  bg-footerLight dark:bg-footerDark z-10">
       <div className="conatiner mx-auto px-4 sm:px-6 py-2 flex justify-between items-center h-full">
         {/* Logo */}
         <Logo />

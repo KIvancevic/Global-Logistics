@@ -63,18 +63,21 @@ export default function Home() {
         <div className="my-auto w-3/5">
           <div className="my-auto flex justify-center flex-row flex-wrap gap-24">
             <div className="flex flex-col justify-between">
-                <h2 className="text-blue-800 dark:text-blue-400 text-4xl uppercase subpixel-antialiased tracking-wide">Customers</h2>
-                  <div className="text-gray-900 dark:text-gray-50 font-sans font-semibold  uppercase text-6xl pt-10 customers2:pt-10">
+                <h2 className="text-blue-800 dark:text-blue-400 text-3xl sm:text-4xl uppercase subpixel-antialiased tracking-wide">Customers</h2>
+                  <div className="text-gray-900 dark:text-gray-50 font-sans font-semibold  uppercase text-4xl sm:text-6xl pt-10 customers2:pt-10">
                     <p className="">We handle</p>
                     <p className="tracking-widest dark:text-gray-900 text-gray-50">logistics</p>
                     <p className="">with passion</p>
                     <p className="">and ease</p>
                   </div>
                 <div className="flex flex-wrap pt-10 customers1:pt-0">
+                 
                   <button className="transition duration-700 ease-in-out bg-gray-900 dark:bg-gray-50 dark:hover:bg-gray-900
-                                  hover:bg-gray-50 hover:text-gray-900 dark:text-gray-900 dark:hover:text-gray-50 
-                                  text-gray-50 font-semibold text-2xl px-32 py-5 rounded-full">
+                              hover:bg-gray-200 hover:text-blue-800 dark:text-gray-900 dark:hover:text-gray-50 
+                              text-gray-50 font-semibold text-2xl px-10 py-5 rounded-full w-60 sm:w-full text-center mx-auto 
+                              sm:mx-0 hover:border-blue-800 border-2  border-gray-900">
                     Ship with us
+                  
                   </button>
                 </div>
             </div>
@@ -116,14 +119,14 @@ export default function Home() {
       <section className="h-3/5 w-full flex flex-col pt-20 pb-20">
         <div className="w-3/5 flex flex-col justify-center mx-auto">
           <div className="flex-wrap flex justify-center sm:justify-end"> 
-            <p className="pr-5 text-blue-800 dark:text-blue-400 text-4xl uppercase subpixel-antialiased tracking-wide">Services</p> 
+            <p className="pr-5 text-blue-800 dark:text-blue-400 text-3xl sm:text-4xl uppercase subpixel-antialiased tracking-wide">Services</p> 
             <div className="w-2 h-10 dark:bg-gray-200 bg-gray-900 "></div>
           </div>
           <div className="flex justify-center flex-wrap pt-10 py-10">
             <div className="">
-              <h2 className="uppercase text-5xl text-center dark:text-gray-200">Daily shipments</h2>
-              <h2 className="uppercase text-4xl text-center pr-44 sm:pr-0 md:pr-0 pt-1 xs:pr-2 dark:text-gray-200">Across USA</h2>
-              <p className="pt-16 w-3/5 text-xl md:text-2xl mx-auto sm:mx-0 dark:text-gray-200 break-words">
+              <h2 className="uppercase text-4xl sm:text-5xl text-center dark:text-gray-200">Daily shipments</h2>
+              <h2 className="uppercase text-3xl sm:text-4xl text-center pr-44 sm:pr-0 md:pr-0 pt-1 xs:pr-2 dark:text-gray-200">Across USA</h2>
+              <p className="pt-16 w-4/5 sm:3/5 text-center sm:text-left text-xl md:text-2xl mx-auto sm:mx-0 dark:text-gray-200 break-words">
                 <span className="text-blue-800 dark:text-blue-400 font-medium inline-block"><Pulse>Global Logistics </Pulse></span>
                   	<span> is</span> a absolute, end-to-end transportation service provider. 
                     Vehicle or freight, LTL or FTL, we are able to support all modes 
@@ -142,7 +145,7 @@ export default function Home() {
       <section className="h-3/5 w-full flex flex-col pt-20 pb-20 bg-gray-500 dark:bg-gray-700 overflow-x-hidden">
         <div className="w-3/5 flex flex-col justify-center sm:justify-end mx-auto gap-24">
           <div className="flex-wrap flex justify-center sm:justify-end"> 
-            <p className="pr-5 text-blue-800 dark:text-blue-400 text-4xl uppercase subpixel-antialiased tracking-wide">Carriers</p> 
+            <p className="pr-5 text-blue-800 dark:text-blue-400 text-3xl sm:text-4xl uppercase subpixel-antialiased tracking-wide">Carriers</p> 
             <div className="w-2 h-10 dark:bg-gray-200 bg-gray-900 "></div>
           </div>
           <div className="flex flex-wrap text-center justify-between gap-6 sm:text-left items-center sm:items-end">
@@ -173,7 +176,7 @@ export default function Home() {
             </Slide>
           </div>
             <div className="ml-0">
-              <div className="text-center  text-gray-900 dark:text-gray-50 font-semibold  uppercase text-6xl pt-10 customers2:pt-10">
+              <div className="text-center text-gray-900 dark:text-gray-50 font-semibold  uppercase text-5xl sm:text-6xl pt-10 customers2:pt-10">
                 <Fade top>
                   <h1>Book loads,</h1>
                   <h1>Get paid faster</h1>

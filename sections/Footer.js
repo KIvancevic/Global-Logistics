@@ -4,7 +4,7 @@ import { GlobeAltIcon } from '@heroicons/react/outline';
 const Footer = () => {
   return (
     <footer className="py-6 h-60 bg-footerLight dark:bg-footerDark w-full">
-      <div className="mx-auto my-auto flex flex-wrap justify-between w-3/5 h-36 items-end">
+      <div className="mx-auto my-auto flex flex-wrap justify-between w-3/5 h-36 items-end gap-y-5">
         <div className="flex gap-x-5 mx-auto md:mx-0">
           <button className="bg-facebook bg-no-repeat bg-center bg-cover w-7 h-7"/>
           <button className="bg-linkedin bg-no-repeat bg-center bg-cover w-7 h-7"/>
