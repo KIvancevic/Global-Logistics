@@ -1,4 +1,8 @@
 import Layout from '../sections/Layout';
+import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade'
+import Pulse from 'react-reveal/Pulse';
+import Highway from '../public/HighwayAZ.jpg'
 
 export default function Home() {
   
@@ -34,23 +38,23 @@ export default function Home() {
 
       <section className="h-screen w-auto flex items-center">
         <div className="mx-auto text-center space-y-6 w-4/5">
-       
+          <Slide left>
           <h1 className="font-sans tracking-tight uppercase break-words text-5xl mdlg:text-6xl text-indigo-800 dark:text-gray-50">
             <span className="font-bold">Top </span> 
             logistics provider
           </h1>
-     
+          </Slide>
           <h1 className="font-sans font-semibold pl-3 
               tracking-special uppercase break-words 
               text-7xl mdlg:text-9xl dark:text-gray-50">
                 bringing
           </h1>
-     
+          <Slide right>
           <h1 className="font-sans tracking-special2 uppercase break-words text-5xl mdlg:text-6xl dark:text-gray-50">
             <span className="font-bold">best </span> 
             transportation
           </h1>
-     
+          </Slide>
         </div>
       </section>
 
@@ -78,7 +82,7 @@ export default function Home() {
             <div className="pl-7 bg-no-repeat bg-center bg-cover bg-highway w-96 h-highway" />
           </div>
         <div className="flex flex-wrap justify-center gap-x-5 pt-20 text-gray-900 dark:text-gray-50 text-lg font-semibold text-center">
-     
+          <Slide left>    
             <div >
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
               <p className="w-48">Profound network of Tracked and Designeted carriers</p>
@@ -87,14 +91,14 @@ export default function Home() {
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
               <p className="w-48">Quick Onboarding</p>
             </div>
-       
-         
+          </Slide>  
+          <Fade bottom big>
             <div>
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
               <p className="w-48">Single Source Solution</p>
             </div>
-      
-         
+          </Fade>
+          <Slide right>
             <div>
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
               <p className="w-48">Strict On Time Delivery</p>
@@ -103,7 +107,7 @@ export default function Home() {
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
               <p className="w-48">Carefull Acceptance</p>
             </div>
-           
+            </Slide>
           </div>
         </div>
         
@@ -120,7 +124,7 @@ export default function Home() {
               <h2 className="uppercase text-5xl text-center dark:text-gray-200">Daily shipments</h2>
               <h2 className="uppercase text-4xl text-center pr-44 sm:pr-0 md:pr-0 pt-1 xs:pr-2 dark:text-gray-200">Across USA</h2>
               <p className="pt-16 w-3/5 text-xl md:text-2xl mx-auto sm:mx-0 dark:text-gray-200 break-words">
-                <span className="text-blue-800 dark:text-blue-400 font-medium inline-block">Global Logistics</span>
+                <span className="text-blue-800 dark:text-blue-400 font-medium inline-block"><Pulse>Global Logistics </Pulse></span>
                   	<span> is</span> a absolute, end-to-end transportation service provider. 
                     Vehicle or freight, LTL or FTL, we are able to support all modes 
                     of transportation across all industries.</p>
@@ -143,7 +147,7 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap text-center justify-between gap-6 sm:text-left items-center sm:items-end">
           <div className="flex flex-col mx-auto 2xl:mx-0 w-96 h-auto text-gray-900 dark:text-gray-50 text-lg font-semibold text-center gap-16">
-       
+            <Slide left>
             <div className="flex flex-wrap gap-20">
               <div className="mx-auto">
                 <div className="bg-truck bg-no-repeat bg-center bg-cover w-32 h-32"></div>
@@ -166,14 +170,14 @@ export default function Home() {
                 <p>Matching</p>
               </div>
             </div>
-    
+            </Slide>
           </div>
             <div>
               <div className="mr-3 text-gray-900 dark:text-gray-50 font-semibold  uppercase text-6xl pt-10 customers2:pt-10">
-           
+                <Fade top>
                   <h1>Book loads,</h1>
                   <h1>Get paid faster</h1>
-            
+                </Fade>
               </div>
             <div className="pt-12 justify-center sm:justify-start flex flex-wrap">
               <div className="mr-0 sm:mr-5">
