@@ -8,7 +8,7 @@ const Layout = ({ children, pageMeta }) => {
   const router = useRouter();
 
   const meta = {
-    title: 'Global Logistic LTD - Transportation Company',
+    title: 'Global Logistic LLC - Transportation Company',
     description: 'Makin deliveries fast, efficient & on time',
     type: 'website', 
     ...pageMeta,

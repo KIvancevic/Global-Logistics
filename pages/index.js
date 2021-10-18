@@ -39,20 +39,20 @@ export default function Home() {
       <section className="h-screen w-auto flex items-center overflow-x-hidden">
         <div className="mx-auto text-center space-y-6 w-4/5">
           <Slide left>
-          <h1 className="font-sans tracking-tight uppercase break-words text-5xl mdlg:text-6xl text-indigo-800 dark:text-gray-50">
+          <h1 className="font-sans tracking-tight uppercase break-words text-3xl mdlg:text-6xl  dark:text-gray-50">
             <span className="font-bold">Top </span> 
-            logistics provider
+            <span className="text-3xl mdlg:text-6xl">logistics provider</span>
           </h1>
           </Slide>
           <h1 className="font-sans font-semibold pl-3 
               tracking-special uppercase break-words 
-              text-7xl mdlg:text-9xl dark:text-gray-50">
+              text-5xl mdlg:text-9xl dark:text-gray-50">
                 bringing
           </h1>
           <Slide right>
           <h1 className="font-sans tracking-special2 uppercase break-words text-5xl mdlg:text-6xl dark:text-gray-50">
             <span className="font-bold">best </span> 
-            transportation
+            <span className="text-3xl mdlg:text-6xl">transportation</span>
           </h1>
           </Slide>
         </div>
@@ -81,29 +81,29 @@ export default function Home() {
             <div className="h-higway w-2 dark:bg-gray-900 bg-gray-200"/>
             <div className="pl-7 bg-no-repeat bg-center bg-cover bg-highway w-96 h-highway" />
           </div>
-        <div className="flex flex-wrap justify-center gap-x-5 pt-20 text-gray-900 dark:text-gray-50 text-lg font-semibold text-center">
+        <div className="flex flex-wrap gap-y-20 justify-center gap-x-5 pt-20 text-gray-900 dark:text-gray-50 text-lg font-semibold text-center">
           <Slide left>    
             <div >
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
               <p className="w-48">Profound network of Tracked and Designeted carriers</p>
             </div>
-            <div>
+            <div className="">
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
               <p className="w-48">Quick Onboarding</p>
             </div>
           </Slide>  
           <Fade bottom big>
-            <div>
+            <div className="">
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
               <p className="w-48">Single Source Solution</p>
             </div>
           </Fade>
           <Slide right>
-            <div>
+            <div className="">
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
               <p className="w-48">Strict On Time Delivery</p>
             </div>
-            <div>
+            <div className="">
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
               <p className="w-48">Carefull Acceptance</p>
             </div>
@@ -140,7 +140,7 @@ export default function Home() {
       </section>
 
       <section className="h-3/5 w-full flex flex-col pt-20 pb-20 bg-gray-500 dark:bg-gray-700 overflow-x-hidden">
-        <div className="w-2/4 flex flex-col justify-end mx-auto gap-24">
+        <div className="w-3/5 flex flex-col justify-center sm:justify-end mx-auto gap-24">
           <div className="flex-wrap flex justify-center sm:justify-end"> 
             <p className="pr-5 text-blue-800 dark:text-blue-400 text-4xl uppercase subpixel-antialiased tracking-wide">Carriers</p> 
             <div className="w-2 h-10 dark:bg-gray-200 bg-gray-900 "></div>
@@ -172,27 +172,26 @@ export default function Home() {
             </div>
             </Slide>
           </div>
-            <div>
-              <div className="mr-3 text-gray-900 dark:text-gray-50 font-semibold  uppercase text-6xl pt-10 customers2:pt-10">
+            <div className="ml-0">
+              <div className="text-center  text-gray-900 dark:text-gray-50 font-semibold  uppercase text-6xl pt-10 customers2:pt-10">
                 <Fade top>
                   <h1>Book loads,</h1>
                   <h1>Get paid faster</h1>
                 </Fade>
               </div>
-            <div className="pt-12 justify-center sm:justify-start flex flex-wrap">
+            <div className="pt-12 mx-auto flex flex-wrap">
               <div className="mr-0 sm:mr-5">
                 <button className="transition duration-700 ease-in-out bg-gray-900 dark:bg-gray-50 dark:hover:bg-gray-900
                                 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-900 dark:hover:text-gray-50 
-                                text-gray-50 font-semibold text-2xl px-10 py-5 w-60 mx-auto 
-                                sm:mx-0 rounded-full">
+                                text-gray-50 font-semibold text-2xl px-10 py-5 w-56 sm:w-60
+                                 rounded-full">
                   Drive with us
                 </button>
               </div>
               <div className="pt-5 carriers:pt-0">
                 <button className="transition duration-700 ease-in-out bg-blue-800 dark:bg-blue-400 dark:hover:bg-gray-900
                                 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-900 dark:hover:text-gray-50 
-                                text-gray-50 font-semibold text-2xl px-10 py-5 w-60 mx-auto 
-                                sm:mx-0 rounded-full">
+                                text-gray-50 font-semibold text-2xl px-10 py-5 w-56 sm:w-60  rounded-full">
                   Learn more
                 </button>
               </div>
@@ -235,9 +234,9 @@ export default function Home() {
        
       </section>
 
-      <section className="h-3/5 w-full flex flex-col pt-20 pb-20 bg-gray-500 dark:bg-gray-700">
-          <div className="flex-wrap flex justify-center"> 
-            <p className="pr-5 text-blue-800 dark:text-blue-400 text-4xl uppercase subpixel-antialiased tracking-wide font-semibold">Why Global Logistics</p> 
+      <section className="h-3/5 w-full flex flex-col mx-auto pt-20 pb-20 bg-gray-500 dark:bg-gray-700">
+          <div className="flex-wrap flex justify-center "> 
+            <p className="pr-5 text-blue-800 dark:text-blue-400 text-2xl sm:text-4xl uppercase subpixel-antialiased tracking-wide font-semibold">Why Global Logistics</p> 
             <div className="w-2 h-10 dark:bg-gray-200 bg-gray-900 "></div>
           </div>
       </section>
