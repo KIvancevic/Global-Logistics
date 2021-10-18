@@ -14,7 +14,7 @@ export default function Home() {
     	
       {/* Hero section */}
 
-      <section className="h-screen w-screen bg-no-repeat bg-center bg-cover bg-sectionOneVolvoTruck flex flex-col justify-center items-center space-y-10">
+      <section className="h-screen w-auto bg-no-repeat bg-center bg-cover bg-sectionOneVolvoTruck flex flex-col justify-center items-center space-y-10">
           {/* Headlines */}
             <div className="space-y-4 mx-auto text-center">
               <h1 className="text-4xl sm:text-7xl font-bold capitalize text-gray-900 dark:text-gray-200">
@@ -36,7 +36,7 @@ export default function Home() {
             >Contact us</button>
       </section>
 
-      <section className="h-screen w-screen flex items-center">
+      <section className="h-screen w-auto flex items-center">
         <div className="mx-auto text-center space-y-6 w-4/5">
           <Slide left>
           <h1 className="font-sans tracking-tight uppercase break-words text-5xl mdlg:text-6xl text-indigo-800 dark:text-gray-50">
@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-3/5 pt-20 pb-20 w-screen flex flex-col flex-wrap items-center bg-gray-500 dark:bg-gray-700">
+      <section className="h-3/5 pt-20 pb-20 w-full flex flex-col flex-wrap items-center bg-gray-500 dark:bg-gray-700">
         
         <div className="my-auto w-3/5">
           <div className="my-auto flex justify-center flex-row flex-wrap gap-24">
@@ -113,7 +113,7 @@ export default function Home() {
         
       </section>
 
-      <section className="h-3/5 w-screen flex flex-col pt-20 pb-20">
+      <section className="h-3/5 w-full flex flex-col pt-20 pb-20">
         <div className="w-3/5 flex flex-col justify-center mx-auto">
           <div className="flex-wrap flex justify-center sm:justify-end"> 
             <p className="pr-5 text-blue-800 dark:text-blue-400 text-4xl uppercase subpixel-antialiased tracking-wide">Services</p> 
@@ -139,7 +139,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-3/5 w-screen flex flex-col pt-20 pb-20 bg-gray-500 dark:bg-gray-700">
+      <section className="h-3/5 w-full flex flex-col pt-20 pb-20 bg-gray-500 dark:bg-gray-700">
         <div className="w-2/4 flex flex-col justify-end mx-auto gap-24">
           <div className="flex-wrap flex justify-center sm:justify-end"> 
             <p className="pr-5 text-blue-800 dark:text-blue-400 text-4xl uppercase subpixel-antialiased tracking-wide">Carriers</p> 
@@ -210,7 +210,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-screen w-screen flex items-center">
+      <section className="h-screen w-auto flex items-center">
         
           <div className="mx-auto text-center  w-4/5 text-4xl ifyoulooking:text-6xl break-words font-sans tracking-tight uppercase font-bold  text-gray-900 dark:text-gray-50">
             <div className="mx-auto flex justify-center w-4/5">
@@ -235,7 +235,7 @@ export default function Home() {
        
       </section>
 
-      <section className="h-3/5 w-screen flex flex-col pt-20 pb-20 bg-gray-500 dark:bg-gray-700">
+      <section className="h-3/5 w-full flex flex-col pt-20 pb-20 bg-gray-500 dark:bg-gray-700">
           <div className="flex-wrap flex justify-center"> 
             <p className="pr-5 text-blue-800 dark:text-blue-400 text-4xl uppercase subpixel-antialiased tracking-wide font-semibold">Why Global Logistics</p> 
             <div className="w-2 h-10 dark:bg-gray-200 bg-gray-900 "></div>

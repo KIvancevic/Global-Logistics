@@ -34,9 +34,9 @@ const Layout = ({ children, pageMeta }) => {
           />
         )}
       </Head>
-      <div className="min-h-screen flex flex-col min-h-full max-w-full">
+      <div className="m-0 p-0">
         <Header />
-        <main className="flex-grow container mx-auto min-h-full max-w-full">
+        <main className="m-0 p-0">
           {children}
         </main>
         <Footer />
