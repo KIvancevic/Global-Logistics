@@ -1,8 +1,8 @@
 import Logo from '../components/Logo'
-import userDarkMode from '../components/UseDarkMode';
+import UserDarkMode from '../components/UseDarkMode';
 
 const Header = () => {
-  const [colorTheme, setTheme] = userDarkMode();
+  const [colorTheme, setTheme] = UserDarkMode();
 
   return (
     <header className="fixed w-screen border-opacity-25 border-b border-blue-300 dark:border-blue-300 backdrop-filter backdrop-blur-sm  backdrop-contrast-200  bg-footerLight dark:bg-footerDark ">

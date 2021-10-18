@@ -71,7 +71,7 @@ export default function Home() {
                     <p className="">and ease</p>
                   </div>
                 <div className="flex flex-wrap pt-10 customers1:pt-0">
-                  <button class="transition duration-700 ease-in-out bg-gray-900 dark:bg-gray-50 dark:hover:bg-gray-900
+                  <button className="transition duration-700 ease-in-out bg-gray-900 dark:bg-gray-50 dark:hover:bg-gray-900
                                   hover:bg-gray-50 hover:text-gray-900 dark:text-gray-900 dark:hover:text-gray-50 
                                   text-gray-50 font-semibold text-2xl px-32 py-5 rounded-full">
                     Ship with us
@@ -130,7 +130,7 @@ export default function Home() {
                     of transportation across all industries.</p>
             </div>
           </div>
-          <button class="transition duration-700 ease-in-out bg-gray-900 dark:bg-gray-50 dark:hover:bg-footerDark
+          <button className="transition duration-700 ease-in-out bg-gray-900 dark:bg-gray-50 dark:hover:bg-footerDark
                               hover:bg-gray-200 hover:text-blue-800 dark:text-gray-900 dark:hover:text-gray-50 
                               text-gray-50 font-semibold text-2xl px-10 py-5 rounded-full w-60 text-center mx-auto 
                               sm:mx-0 hover:border-blue-800 border-2 ">
@@ -146,7 +146,7 @@ export default function Home() {
             <div className="w-2 h-10 dark:bg-gray-200 bg-gray-900 "></div>
           </div>
           <div className="flex flex-wrap text-center justify-between gap-6 sm:text-left items-center sm:items-end">
-          <div class="flex flex-col mx-auto 2xl:mx-0 w-96 h-auto text-gray-900 dark:text-gray-50 text-lg font-semibold text-center gap-16">
+          <div className="flex flex-col mx-auto 2xl:mx-0 w-96 h-auto text-gray-900 dark:text-gray-50 text-lg font-semibold text-center gap-16">
             <Slide left>
             <div className="flex flex-wrap gap-20">
               <div className="mx-auto">
@@ -201,7 +201,7 @@ export default function Home() {
           </div>
 
         
-          {/* <button class="transition duration-700 ease-in-out bg-gray-900 dark:bg-gray-50 dark:hover:bg-gray-900
+          {/* <button className="transition duration-700 ease-in-out bg-gray-900 dark:bg-gray-50 dark:hover:bg-gray-900
                               hover:bg-gray-50 hover:text-gray-900 dark:text-gray-900 dark:hover:text-gray-50 
                               text-gray-50 font-semibold text-2xl px-10 py-5 w-60 text-center mx-auto 
                               sm:mx-0 rounded-full">
