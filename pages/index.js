@@ -36,8 +36,8 @@ export default function Home() {
             >Contact us</button>
       </section>
 
-      <section className="h-screen w-auto flex items-center">
-        <div className="mx-auto text-center space-y-6 w-4/5  overflow-x-hidden">
+      <section className="h-screen w-auto flex items-center overflow-x-hidden">
+        <div className="mx-auto text-center space-y-6 w-4/5">
           <Slide left>
           <h1 className="font-sans tracking-tight uppercase break-words text-5xl mdlg:text-6xl text-indigo-800 dark:text-gray-50">
             <span className="font-bold">Top </span> 
@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-3/5 pt-20 pb-20 w-full flex flex-col flex-wrap items-center bg-gray-500 dark:bg-gray-700">
+      <section className="h-3/5 pt-20 pb-20 w-full flex flex-col flex-wrap items-center bg-gray-500 dark:bg-gray-700 overflow-x-hidden">
         
         <div className="my-auto w-3/5">
           <div className="my-auto flex justify-center flex-row flex-wrap gap-24">
@@ -81,7 +81,7 @@ export default function Home() {
             <div className="h-higway w-2 dark:bg-gray-900 bg-gray-200"/>
             <div className="pl-7 bg-no-repeat bg-center bg-cover bg-highway w-96 h-highway" />
           </div>
-        <div className="flex flex-wrap justify-center gap-x-5 pt-20 text-gray-900 dark:text-gray-50 text-lg font-semibold text-center  overflow-x-hidden">
+        <div className="flex flex-wrap justify-center gap-x-5 pt-20 text-gray-900 dark:text-gray-50 text-lg font-semibold text-center">
           <Slide left>    
             <div >
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
@@ -139,14 +139,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-3/5 w-full flex flex-col pt-20 pb-20 bg-gray-500 dark:bg-gray-700">
+      <section className="h-3/5 w-full flex flex-col pt-20 pb-20 bg-gray-500 dark:bg-gray-700 overflow-x-hidden">
         <div className="w-2/4 flex flex-col justify-end mx-auto gap-24">
           <div className="flex-wrap flex justify-center sm:justify-end"> 
             <p className="pr-5 text-blue-800 dark:text-blue-400 text-4xl uppercase subpixel-antialiased tracking-wide">Carriers</p> 
             <div className="w-2 h-10 dark:bg-gray-200 bg-gray-900 "></div>
           </div>
           <div className="flex flex-wrap text-center justify-between gap-6 sm:text-left items-center sm:items-end">
-          <div className="flex flex-col mx-auto 2xl:mx-0 w-96 h-auto text-gray-900 dark:text-gray-50 text-lg font-semibold text-center gap-16  overflow-x-hidden">
+          <div className="flex flex-col mx-auto 2xl:mx-0 w-96 h-auto text-gray-900 dark:text-gray-50 text-lg font-semibold text-center gap-16">
             <Slide left>
             <div className="flex flex-wrap gap-20">
               <div className="mx-auto">
