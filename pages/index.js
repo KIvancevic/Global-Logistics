@@ -61,9 +61,12 @@ export default function Home() {
       <section className="h-3/5 pt-20 pb-20 w-full flex flex-col flex-wrap items-center bg-gray-500 dark:bg-gray-700 overflow-x-hidden">
         
         <div className="my-auto w-3/5">
-          <div className="my-auto flex justify-center flex-row flex-wrap gap-24">
-            <div className="flex flex-col justify-between">
-                <h2 className="text-blue-800 dark:text-blue-400 text-3xl sm:text-4xl uppercase subpixel-antialiased tracking-wide">Customers</h2>
+          <div className="my-auto flex justify-center flex-row flex-wrap gap-6 sm:gap-24">
+            <div className="flex flex-col justify-between text-center sm:text-left">
+                <div className="flex-wrap flex justify-center sm:justify-start">
+                  <h2 className="text-blue-800 dark:text-blue-400 text-3xl sm:text-4xl  uppercase subpixel-antialiased tracking-wide">Customers</h2>
+                  <div className="ml-2 w-2 h-10 sm:ml-0 sm:w-0 sm:h-10 dark:bg-gray-200 bg-gray-900 "></div>
+                </div> 
                   <div className="text-gray-900 dark:text-gray-50 font-sans font-semibold  uppercase text-4xl sm:text-6xl pt-10 customers2:pt-10">
                     <p className="">We handle</p>
                     <p className="tracking-widest dark:text-gray-900 text-gray-50">logistics</p>
@@ -74,7 +77,7 @@ export default function Home() {
                  
                   <button className="transition duration-700 ease-in-out bg-gray-900 dark:bg-gray-50 dark:hover:bg-gray-900
                               hover:bg-gray-200 hover:text-blue-800 dark:text-gray-900 dark:hover:text-gray-50 
-                              text-gray-50 font-semibold text-2xl px-10 py-5 rounded-full w-60 sm:w-full text-center mx-auto 
+                              text-gray-50 font-semibold text-2xl py-2 w-60 sm:py-5 rounded-full w-60 sm:w-full text-center mx-auto 
                               sm:mx-0 hover:border-blue-800 border-2  border-gray-900">
                     Ship with us
                   
@@ -88,27 +91,32 @@ export default function Home() {
           <Slide left>    
             <div >
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
-              <p className="w-48">Profound network of Tracked and Designeted carriers</p>
+              {/* <p className="w-48">Profound network of Tracked and Designeted carriers</p> */}
+              <p className="w-48">Text</p>
             </div>
             <div className="">
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
-              <p className="w-48">Quick Onboarding</p>
+              {/* <p className="w-48">Quick Onboarding</p> */}
+              <p className="w-48">Text</p>
             </div>
           </Slide>  
           <Fade bottom big>
             <div className="">
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
-              <p className="w-48">Single Source Solution</p>
+              {/* <p className="w-48">Single Source Solution</p> */}
+              <p className="w-48">Text</p>
             </div>
           </Fade>
           <Slide right>
             <div className="">
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
               <p className="w-48">Strict On Time Delivery</p>
+              <p className="w-48">Text</p>
             </div>
             <div className="">
               <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
-              <p className="w-48">Carefull Acceptance</p>
+              {/* <p className="w-48">Carefull Acceptance</p> */}
+              <p className="w-48">Text</p>
             </div>
             </Slide>
           </div>
@@ -119,8 +127,8 @@ export default function Home() {
       <section className="h-3/5 w-full flex flex-col pt-20 pb-20">
         <div className="w-3/5 flex flex-col justify-center mx-auto">
           <div className="flex-wrap flex justify-center sm:justify-end"> 
-            <p className="pr-5 text-blue-800 dark:text-blue-400 text-3xl sm:text-4xl uppercase subpixel-antialiased tracking-wide">Services</p> 
-            <div className="w-2 h-10 dark:bg-gray-200 bg-gray-900 "></div>
+            <p className="ml-2 text-blue-800 dark:text-blue-400 text-3xl sm:text-4xl uppercase subpixel-antialiased tracking-wide">Services</p> 
+            <div className="ml-2 w-2 h-10 dark:bg-gray-200 bg-gray-900 "></div>
           </div>
           <div className="flex justify-center flex-wrap pt-10 py-10">
             <div className="">
@@ -128,14 +136,15 @@ export default function Home() {
               <h2 className="uppercase text-3xl sm:text-4xl text-center pr-44 sm:pr-0 md:pr-0 pt-1 xs:pr-2 dark:text-gray-200">Across USA</h2>
               <p className="pt-16 w-4/5 sm:3/5 text-center sm:text-left text-xl md:text-2xl mx-auto sm:mx-0 dark:text-gray-200 break-words">
                 <span className="text-blue-800 dark:text-blue-400 font-medium inline-block"><Pulse>Global Logistics </Pulse></span>
-                  	<span> is</span> a absolute, end-to-end transportation service provider. 
+                       <span> </span> text</p>
+                  	{/* <span> is</span> a absolute, end-to-end transportation service provider. 
                     Vehicle or freight, LTL or FTL, we are able to support all modes 
-                    of transportation across all industries.</p>
+                    of transportation across all industries.</p> */}
             </div>
           </div>
           <button className="transition duration-700 ease-in-out bg-gray-900 dark:bg-gray-50 dark:hover:bg-footerDark
                               hover:bg-gray-200 hover:text-blue-800 dark:text-gray-900 dark:hover:text-gray-50 
-                              text-gray-50 font-semibold text-2xl px-10 py-5 rounded-full w-60 text-center mx-auto 
+                              text-gray-50 font-semibold text-2xl py-2 sm:px-10 sm:py-5 rounded-full w-60 text-center mx-auto 
                               sm:mx-0 hover:border-blue-800 border-2 ">
                 Services
               </button>
@@ -145,8 +154,8 @@ export default function Home() {
       <section className="h-3/5 w-full flex flex-col pt-20 pb-20 bg-gray-500 dark:bg-gray-700 overflow-x-hidden">
         <div className="w-3/5 flex flex-col justify-center sm:justify-end mx-auto gap-24">
           <div className="flex-wrap flex justify-center sm:justify-end"> 
-            <p className="pr-5 text-blue-800 dark:text-blue-400 text-3xl sm:text-4xl uppercase subpixel-antialiased tracking-wide">Carriers</p> 
-            <div className="w-2 h-10 dark:bg-gray-200 bg-gray-900 "></div>
+            <p className="ml-2 text-blue-800 dark:text-blue-400 text-3xl sm:text-4xl uppercase subpixel-antialiased tracking-wide">Carriers</p> 
+            <div className="ml-2 w-2 h-10 dark:bg-gray-200 bg-gray-900 "></div>
           </div>
           <div className="flex flex-wrap text-center justify-between gap-6 sm:text-left items-center sm:items-end">
           <div className="flex flex-col mx-auto 2xl:mx-0 w-96 h-auto text-gray-900 dark:text-gray-50 text-lg font-semibold text-center gap-16">
@@ -154,23 +163,27 @@ export default function Home() {
             <div className="flex flex-wrap gap-20">
               <div className="mx-auto">
                 <div className="bg-truck bg-no-repeat bg-center bg-cover w-32 h-32"></div>
-                <p>One-to-One</p>
-                <p>Support</p>
+                {/* <p>One-to-One</p>
+                <p>Support</p> */}
+                <p>text</p>
               </div>
               <div className="mx-auto">
                 <div className="bg-truck bg-no-repeat bg-center bg-cover w-32 h-32"></div>
-                <p>Rapid Pay</p>
+                {/* <p>Rapid Pay</p> */}
+                <p>text</p>
               </div>
             </div>
             <div className="flex flex-wrap gap-20">
               <div className="mx-auto">
                 <div className="bg-truck mx-auto bg-no-repeat bg-center bg-cover w-32 h-32"></div>
-                <p>Technology Platform</p>
+                {/* <p>Technology Platform</p> */}
+                <p>text</p>
               </div>
               <div className="mx-auto">
                 <div className="bg-truck bg-no-repeat bg-center bg-cover w-32 h-32"></div>
-                <p>Quick Load</p>
-                <p>Matching</p>
+                {/* <p>Quick Load</p>
+                <p>Matching</p> */}
+                <p>text</p>
               </div>
             </div>
             </Slide>
@@ -178,15 +191,16 @@ export default function Home() {
             <div className="ml-0">
               <div className="text-center text-gray-900 dark:text-gray-50 font-semibold  uppercase text-5xl sm:text-6xl pt-10 customers2:pt-10">
                 <Fade top>
-                  <h1>Book loads,</h1>
-                  <h1>Get paid faster</h1>
+                  {/* <h1>Book loads,</h1>
+                  <h1>Get paid faster</h1> */}
+                  <h1>text</h1>
                 </Fade>
               </div>
             <div className="pt-12 mx-auto flex flex-wrap">
               <div className="mr-0 sm:mr-5">
                 <button className="transition duration-700 ease-in-out bg-gray-900 dark:bg-gray-50 dark:hover:bg-gray-900
                                 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-900 dark:hover:text-gray-50 
-                                text-gray-50 font-semibold text-2xl px-10 py-5 w-56 sm:w-60
+                                text-gray-50 font-semibold text-2xl py-2 w-60 sm:py-5 w-56 sm:w-60
                                  rounded-full">
                   Drive with us
                 </button>
@@ -194,7 +208,7 @@ export default function Home() {
               <div className="pt-5 carriers:pt-0">
                 <button className="transition duration-700 ease-in-out bg-blue-800 dark:bg-blue-400 dark:hover:bg-gray-900
                                 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-900 dark:hover:text-gray-50 
-                                text-gray-50 font-semibold text-2xl px-10 py-5 w-56 sm:w-60  rounded-full">
+                                text-gray-50 font-semibold text-2xl py-2 w-60 sm:py-5  w-56 sm:w-60  rounded-full">
                   Learn more
                 </button>
               </div>
@@ -238,8 +252,8 @@ export default function Home() {
       </section>
 
       <section className="h-3/5 w-full flex flex-col mx-auto pt-20 pb-20 bg-gray-500 dark:bg-gray-700">
-          <div className="flex-wrap flex justify-center "> 
-            <p className="pr-5 text-blue-800 dark:text-blue-400 text-2xl sm:text-4xl uppercase subpixel-antialiased tracking-wide font-semibold">Why Global Logistics</p> 
+          <div className="flex-wrap flex items-center justify-center "> 
+            <p className="pr-2 text-blue-800 dark:text-blue-400 text-2xl sm:text-4xl uppercase subpixel-antialiased tracking-wide font-semibold">Why Global Logistics</p> 
             <div className="w-2 h-10 dark:bg-gray-200 bg-gray-900 "></div>
           </div>
       </section>

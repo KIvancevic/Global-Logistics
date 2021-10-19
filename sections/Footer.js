@@ -19,7 +19,7 @@ const Footer = () => {
             <span className="font-bold text-lg tracking-tight whitespace-nowrap">
                 Global Logistics LLC
             </span>
-            <div className="flex uppercase">
+            <div className="flex items-center uppercase">
               <h3 className="pr-2">Contact us</h3>
               <div className="w-1 h-6 dark:bg-gray-200 bg-gray-900"></div>
             </div>
