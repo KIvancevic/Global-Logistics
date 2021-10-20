@@ -3,6 +3,7 @@ import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse';
 import Highway from '../public/HighwayAZ.jpg'
+import ContactUs from '../components/Form'
 
 export default function Home() {
   
@@ -14,11 +15,11 @@ export default function Home() {
     	
       {/* Hero section */}
 
-      <section className="h-screen w-auto bg-no-repeat bg-center bg-cover bg-sectionOneVolvoTruck flex flex-col justify-center items-center space-y-10">
+      <section className="bg-fixed h-screen w-auto bg-no-repeat bg-center bg-cover bg-sectionOneVolvoTruck flex flex-col justify-center items-center space-y-10">
           {/* Headlines */}
             <div className="space-y-4 mx-auto text-center">
               <h1 className="text-4xl sm:text-7xl font-bold capitalize text-gray-900 dark:text-gray-200">
-                <span>Global logistics</span>
+                <span>Global logistics US</span>
               </h1>
               <h2 className="text-xl sm:text-2xl text-gray-900 dark:text-gray-200">
                 <span>Transportation Company</span>
@@ -30,10 +31,12 @@ export default function Home() {
           <button 
             type="button"
             onClick={null}
-            className="transition duration-1000 ease-in-out bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md border-2
-            border-blue-600 hover:border-blue-700 text-lg sm:text-xl
+            className="transition duration-1000 ease-in-out bg-gray-900 hover:bg-gray-200 hover:text-gray-900 text-white px-6 py-3 rounded-md 
+            text-lg sm:text-xl font-semibold
             focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50 whitespace-nowrap"
             >Contact us</button>
+
+            <ContactUs></ContactUs>
       </section>
 
       <section className="h-screen w-auto flex items-center overflow-x-hidden">
@@ -78,14 +81,14 @@ export default function Home() {
                   <button className="transition duration-700 ease-in-out bg-gray-900 dark:bg-gray-50 dark:hover:bg-gray-900
                               hover:bg-gray-200 hover:text-blue-800 dark:text-gray-900 dark:hover:text-gray-50 
                               text-gray-50 font-semibold text-2xl py-2 w-60 sm:py-5 rounded-full w-60 sm:w-full text-center mx-auto 
-                              sm:mx-0 hover:border-blue-800 border-2  border-gray-900">
+                              sm:mx-0 hover:border-blue-800 border-2 border-gray-900">
                     Ship with us
                   
                   </button>
                 </div>
             </div>
             <div className="h-higway w-2 dark:bg-gray-900 bg-gray-200"/>
-            <div className="pl-7 bg-no-repeat bg-center bg-cover bg-highway w-96 h-highway" />
+            <div className="rounded drop-shadow-2xl shadow-2xl saturate-100 filter brightness-150 contrast-125  pl-7 bg-no-repeat bg-center bg-cover bg-highway w-96 h-highway" />
           </div>
         <div className="flex flex-wrap gap-y-20 justify-center gap-x-5 pt-20 text-gray-900 dark:text-gray-50 text-lg font-semibold text-center">
           <Slide left>    
@@ -135,7 +138,7 @@ export default function Home() {
               <h2 className="uppercase text-4xl sm:text-5xl text-center dark:text-gray-200">Daily shipments</h2>
               <h2 className="uppercase text-3xl sm:text-4xl text-center pr-44 sm:pr-0 md:pr-0 pt-1 xs:pr-2 dark:text-gray-200">Across USA</h2>
               <p className="pt-16 w-4/5 sm:3/5 text-center sm:text-left text-xl md:text-2xl mx-auto sm:mx-0 dark:text-gray-200 break-words">
-                <span className="text-blue-800 dark:text-blue-400 font-medium inline-block"><Pulse>Global Logistics </Pulse></span>
+                <span className="text-blue-800 dark:text-blue-400 font-medium inline-block"><Pulse>Global Logistics US </Pulse></span>
                        <span> </span> text</p>
                   	{/* <span> is</span> a absolute, end-to-end transportation service provider. 
                     Vehicle or freight, LTL or FTL, we are able to support all modes 
@@ -253,7 +256,7 @@ export default function Home() {
 
       <section className="h-3/5 w-full flex flex-col mx-auto pt-20 pb-20 bg-gray-500 dark:bg-gray-700">
           <div className="flex-wrap flex items-center justify-center "> 
-            <p className="pr-2 text-blue-800 dark:text-blue-400 text-2xl sm:text-4xl uppercase subpixel-antialiased tracking-wide font-semibold">Why Global Logistics</p> 
+            <p className="pr-2 text-blue-800 dark:text-blue-400 text-2xl sm:text-4xl uppercase subpixel-antialiased tracking-wide font-semibold">Why Global Logistics US</p> 
             <div className="w-2 h-10 dark:bg-gray-200 bg-gray-900 "></div>
           </div>
       </section>

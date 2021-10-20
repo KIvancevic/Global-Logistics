@@ -11,13 +11,13 @@ const Footer = () => {
           <button className="bg-instagram bg-no-repeat bg-center bg-cover w-7 h-7"/>
         </div>
         <div className="text-center text-xs md:text-base text-gray-900 dark:text-gray-500 mx-auto sm:mx-0 order-last xl:order-none">
-          <p>Copyrigth © {new Date().getFullYear()} Global Logistics LLC. All rights reserved. </p>
+          <p>Copyrigth © {new Date().getFullYear()} Global Logistics US LLC. All rights reserved. </p>
           <p>Powered by WeblaB</p>
         </div>
         <div className="flex flex-col items-center sm:items-end text-center text-xs sm:text-base text-gray-900 dark:text-gray-500 order-first xl:order-none">
             <GlobeAltIcon className="w-8 h-8 flex-shrink-0" />
             <span className="font-bold text-lg tracking-tight whitespace-nowrap">
-                Global Logistics LLC
+                Global Logistics US LLC
             </span>
             <div className="flex items-center uppercase">
               <h3 className="pr-2">Contact us</h3>
