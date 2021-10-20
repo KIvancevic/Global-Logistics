@@ -2,7 +2,6 @@ import Layout from '../sections/Layout';
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse';
-import Highway from '../public/HighwayAZ.jpg'
 import ContactUs from '../components/Form'
 
 export default function Home() {

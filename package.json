@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.3",
+    "@sendgrid/mail": "^7.5.0",
     "@tailwindcss/forms": "^0.3.4",
     "next": "11.1.0",
     "next-themes": "0.0.15",
