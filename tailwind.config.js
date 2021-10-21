@@ -28,7 +28,8 @@ module.exports = {
         "quoteDown" : "url('/quoteDown.png')",
         "facebook" : "url('/fb.png')",
         "instagram" : "url('/instagramColorResized.png')",
-        "linkedin" : "url('/linkedIn.png')"
+        "linkedin" : "url('/linkedIn.png')",
+        "close" : "url('/close.png')"
       }),
       colors: {
         'footerLight' : '#6B7280E6',

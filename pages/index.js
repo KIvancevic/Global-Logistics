@@ -17,7 +17,7 @@ export default function Home() {
     	
       {/* Hero section */}
 
-      <section className="bg-fixed h-screen w-auto bg-no-repeat bg-center bg-cover bg-sectionOneVolvoTruck flex flex-col justify-center items-center space-y-10">
+      <section className="relative h-screen w-full bg-no-repeat bg-center bg-cover bg-sectionOneVolvoTruck flex flex-col justify-center items-center space-y-10">
           {/* Headlines */}
             <div className="space-y-4 mx-auto text-center">
               <h1 className="text-4xl sm:text-7xl font-bold capitalize text-gray-900 dark:text-gray-200">
