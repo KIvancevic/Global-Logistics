@@ -16,7 +16,7 @@ async function sendEmail(req, res) {
         <title>The HTML5 Herald</title>
         <meta name="description" content="The HTML5 Herald">
         <meta name="author" content="SitePoint">
-      <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
       
         <link rel="stylesheet" href="css/styles.css?v=1.0">
       
@@ -32,8 +32,7 @@ async function sendEmail(req, res) {
               <p>${req.body.message}</p>
               <br>
               </div>
-              <img src="https://manuarora.in/logo.png" class="logo-image" style="height: 50px;width: 50px;border-radius: 5px;overflow: hidden;">
-              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Regards<br>Manu Arora<br>Software Developer<br>+91 9587738861</p>
+              
               </div>
       </body>
       </html>`,

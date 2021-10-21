@@ -1,23 +1,20 @@
 import React, { useState } from "react";
 
 export default function ContactUs() {
-   // States for contact form fields
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  //   Form validation state
+  //   Form validation
   const [errors, setErrors] = useState({});
 
-  //   Setting button text on form submission
+  //   Setting button text
   const [buttonText, setButtonText] = useState("Send");
 
-  // Setting success or failure messages states
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [showFailureMessage, setShowFailureMessage] = useState(false);
 
-  // Validation check method
   const handleValidation = () => {
     let tempErrors = {};
     let isValid = true;
@@ -44,7 +41,7 @@ export default function ContactUs() {
     return isValid;
   };
 
-  //   Handling form submit
+  //   const [form, setForm] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -53,7 +50,7 @@ export default function ContactUs() {
 
     if (isValidForm) {
       setButtonText("Sending");
-      const res = await fetch("/api/sendgrid", {
+      const res = await fetch("../api/sendgrid", {
         body: JSON.stringify({
           email: email,
           fullname: fullname,
@@ -72,17 +69,28 @@ export default function ContactUs() {
         setShowSuccessMessage(false);
         setShowFailureMessage(true);
         setButtonText("Send");
+
+        // Reset form fields
+        setFullname("");
+        setEmail("");
+        setMessage("");
+        setSubject("");
         return;
       }
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
       setButtonText("Send");
+      // Reset form fields
+      setFullname("");
+      setEmail("");
+      setMessage("");
+      setSubject("");
     }
     console.log(fullname, email, subject, message);
   };
   return (
     <main>
-    <form
+     <form
           onSubmit={handleSubmit}
           className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:bg-blue-500"
         >
@@ -105,7 +113,9 @@ export default function ContactUs() {
             name="fullname"
             className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
           />
-         
+          {errors?.fullname && (
+            <p className="text-red-500">Full name cannot be empty.</p>
+          )}
 
           <label
             htmlFor="email"
@@ -122,7 +132,9 @@ export default function ContactUs() {
             }}
             className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
           />
-          
+          {errors?.email && (
+            <p className="text-red-500">Email cannot be empty.</p>
+          )}
 
           <label
             htmlFor="subject"
@@ -139,7 +151,9 @@ export default function ContactUs() {
             }}
             className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
           />
-         
+          {errors?.subject && (
+            <p className="text-red-500">Subject cannot be empty.</p>
+          )}
           <label
             htmlFor="message"
             className="text-gray-500 font-light mt-4 dark:text-gray-50"
@@ -154,13 +168,15 @@ export default function ContactUs() {
             }}
             className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
           ></textarea>
-          
+          {errors?.message && (
+            <p className="text-red-500">Message body cannot be empty.</p>
+          )}
           <div className="flex flex-row items-center justify-start">
             <button
               type="submit"
               className="px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center"
             >
-              Submit
+              {buttonText}
               <svg
                 width="24"
                 height="24"
@@ -175,6 +191,18 @@ export default function ContactUs() {
                 />
               </svg>
             </button>
+          </div>
+          <div className="text-left">
+            {showSuccessMessage && (
+              <p className="text-green-500 font-semibold text-sm my-2">
+                Thank you! Your message has been delivered.
+              </p>
+            )}
+            {showFailureMessage && (
+              <p className="text-red-500">
+                Oops! Something went wrong, please try again.
+              </p>
+            )}
           </div>
         </form>
     </main>
