@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ContactUs() {
+export default function ContactUs(props) {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -88,8 +88,8 @@ export default function ContactUs() {
     }
     console.log(fullname, email, subject, message);
   };
-  return (
-    <main>
+  return (props.trigger) ? 
+    (
      <form
           onSubmit={handleSubmit}
           className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:bg-blue-500"
@@ -194,9 +194,17 @@ export default function ContactUs() {
           </div>
           <div className="text-left">
             {showSuccessMessage && (
-              <p className="text-green-500 font-semibold text-sm my-2">
-                Thank you! Your message has been delivered.
-              </p>
+              <>
+                <p className="text-green-500 font-semibold text-sm my-2">
+                  Thank you!
+                </p>
+                <p className="text-green-500 font-semibold text-sm my-2">
+                  Your message has been successfully sent.
+                </p>
+                <p className="text-green-500 font-semibold text-sm my-2">
+                  We will contact you very soon!
+                </p>
+              </>
             )}
             {showFailureMessage && (
               <p className="text-red-500">
@@ -205,6 +213,6 @@ export default function ContactUs() {
             )}
           </div>
         </form>
-    </main>
-  );
+
+    ) : "";
 }

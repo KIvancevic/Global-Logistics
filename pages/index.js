@@ -3,8 +3,11 @@ import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse';
 import ContactUs from '../components/Form'
+import { useState } from 'react';
 
 export default function Home() {
+
+  const [buttonPopup, setButtonPopup] = useState(false);
   
 
   return (
@@ -27,15 +30,17 @@ export default function Home() {
 
           {/* CTA */}
 
-          <button 
+          <button
             type="button"
-            onClick={null}
+            onClick={() => setButtonPopup(true)}
             className="transition duration-1000 ease-in-out bg-gray-900 hover:bg-gray-200 hover:text-gray-900 text-white px-6 py-3 rounded-md 
             text-lg sm:text-xl font-semibold
             focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50 whitespace-nowrap"
             >Contact us</button>
 
-            <ContactUs></ContactUs>
+            <ContactUs trigger={buttonPopup}>
+
+            </ContactUs>
       </section>
 
       <section className="h-screen w-auto flex items-center overflow-x-hidden">
