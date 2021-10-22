@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Fade from 'react-reveal/Fade';
 
 export default function ContactUs(props) {
   const [fullname, setFullname] = useState("");
@@ -90,7 +91,7 @@ export default function ContactUs(props) {
   };
   return (props.trigger) ? 
     (
-
+    <Fade bottom>
      <form
           onSubmit={handleSubmit}
           className="absolute rounded-lg shadow-xl flex flex-col px-8 py-8 h-auto w-auto sm:w-2/4 xl:w-2/5 2xl:w-2/6 bg-white dark:bg-blue-500"
@@ -192,7 +193,7 @@ export default function ContactUs(props) {
                 />
               </svg>
             </button>
-              <button  className="px-10 mt-8 py-2 bg-[#da2433] text-gray-50 font-light rounded-md text-lg flex flex-row items-center">
+              <button onClick={() => props.setTrigger(false)} className="px-10 mt-8 py-2 bg-[#da2433] text-gray-50 font-light rounded-md text-lg flex flex-row items-center">
                 Close
                 <div className="bg-close h-4 w-4 ml-2 "></div>
               </button>
@@ -218,5 +219,6 @@ export default function ContactUs(props) {
             )}
           </div>
         </form>
+      </Fade>
     ) : "";
 }

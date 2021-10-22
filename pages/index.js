@@ -3,12 +3,11 @@ import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse';
 import ContactUs from '../components/Form'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
 
   const [buttonPopup, setButtonPopup] = useState(false);
-  
 
   return (
     <>
@@ -38,7 +37,7 @@ export default function Home() {
             focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50 whitespace-nowrap"
             >Contact us</button>
 
-            <ContactUs trigger={buttonPopup}>
+            <ContactUs trigger={buttonPopup} setTrigger={setButtonPopup}>
 
             </ContactUs>
       </section>
