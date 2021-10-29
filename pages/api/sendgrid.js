@@ -2,6 +2,11 @@ import sendgrid from "@sendgrid/mail";
 
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
+const fs = require("fs");
+
+pathToAttachment = `${__dirname}/attachment.pdf`;
+attachment = fs.readFileSync(pathToAttachment).toString("base64");
+
 async function sendEmail(req, res) {
   try {
     await sendgrid.send({
@@ -37,6 +42,14 @@ async function sendEmail(req, res) {
               </div>
       </body>
       </html>`,
+      attachments: [
+        {
+          content: attachment,
+          filename: "attachment.pdf",
+          type: "application/pdf",
+          disposition: "attachment"
+        }
+      ]
     });
   } catch (error) {
     // console.log(error);

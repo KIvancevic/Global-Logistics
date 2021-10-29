@@ -1,5 +1,3 @@
-const plugin = require('tailwindcss/plugin')
-
 module.exports = {
   mode: 'jit',
   purge: [
@@ -21,7 +19,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: theme => ({
-        "sectionOneVolvoTruck" : "url('/volvo.jpg')",
+        "sectionOneVolvoTruck" : "linear-gradient(to right ,black, rgba(142, 121, 132, 0.3) 80rem, black 160rem), url('/volvo.jpg')",
         "highway" : "url('/HighwayAZ.jpg')",
         "truck" : "url('/semi3.png')",
         "quoteUp" : "url('/quoteUp.png')",
@@ -34,6 +32,7 @@ module.exports = {
       colors: {
         'footerLight' : '#6B7280E6',
         'footerDark' : '#374151E6',
+        'footerDarkOp1' : '#374151'
       },
       height: {
         highway: '32rem'
@@ -49,7 +48,13 @@ module.exports = {
         'mdlg' : '920px',
         'ifyoulooking' : '1078px',
         'asterisk' : '1500px'
-      }
+      },
+      textShadow: {
+        'ContactUs': '1px 2px 3px rgba(147, 197, 253, .9), 2px 3px 4px rgba(31, 41, 55, .7)',
+     },
+     dropShadow: {
+      '5xl': '20px 20px 20px rgba(0, 0, 0, 1)',
+    }
     },
   },
   variants: {
@@ -57,5 +62,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('tailwindcss-textshadow')
   ],
 }

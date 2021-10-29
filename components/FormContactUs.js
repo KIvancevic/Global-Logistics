@@ -94,15 +94,17 @@ export default function ContactUs(props) {
     <Fade bottom>
      <form
           onSubmit={handleSubmit}
-          className="absolute rounded-lg shadow-xl flex flex-col px-8 py-8 h-auto w-auto sm:w-2/4 xl:w-2/5 2xl:w-2/6 bg-white dark:bg-blue-500"
+          className="absolute z-10 rounded-lg flex flex-col px-8 py-8 h-auto w-auto 
+                      sm:w-2/4 xl:w-2/5 2xl:w-2/6 bg-[#EEF2FFE6] dark:bg-blue-500
+                      backdrop-filter backdrop-blur-sm"
         >
-          <h1 className="text-2xl font-bold dark:text-gray-50">
+          <h1 className="text-2xl font-bold text-footerDark dark:text-gray-50">
             Send a message
           </h1>
 
           <label
             htmlFor="fullname"
-            className="text-gray-500 font-light mt-8 dark:text-gray-50"
+            className="mt-8 font-medium tracking-wide text-footerDark dark:text-gray-50"
           >
             Full name<span className="text-red-500 dark:text-gray-50">*</span>
           </label>
@@ -121,7 +123,7 @@ export default function ContactUs(props) {
 
           <label
             htmlFor="email"
-            className="text-gray-500 font-light mt-4 dark:text-gray-50"
+            className="font-medium tracking-wide text-footerDark mt-4 dark:text-gray-50"
           >
             E-mail<span className="text-red-500">*</span>
           </label>
@@ -140,7 +142,7 @@ export default function ContactUs(props) {
 
           <label
             htmlFor="subject"
-            className="text-gray-500 font-light mt-4 dark:text-gray-50"
+            className="font-medium tracking-wide text-footerDark mt-4 dark:text-gray-50"
           >
             Subject<span className="text-red-500">*</span>
           </label>
@@ -158,7 +160,7 @@ export default function ContactUs(props) {
           )}
           <label
             htmlFor="message"
-            className="text-gray-500 font-light mt-4 dark:text-gray-50"
+            className="font-medium tracking-wide text-footerDark mt-4 dark:text-gray-50"
           >
             Message<span className="text-red-500">*</span>
           </label>
@@ -170,13 +172,14 @@ export default function ContactUs(props) {
             }}
             className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
           ></textarea>
+         
           {errors?.message && (
             <p className="text-red-500">Message body cannot be empty.</p>
           )}
           <div className="flex flex-row items-center justify-between">
             <button
               type="submit"
-              className="px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center"
+              className="px-4 py-1 sm:px-10 mt-8 sm:py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center"
             >
               {buttonText}
               <svg
@@ -193,7 +196,7 @@ export default function ContactUs(props) {
                 />
               </svg>
             </button>
-              <button onClick={() => props.setTrigger(false)} className="px-10 mt-8 py-2 bg-[#da2433] text-gray-50 font-light rounded-md text-lg flex flex-row items-center">
+              <button onClick={() => props.setTrigger(false)} className="px-4 py-1 sm:px-10 mt-8 sm:py-2 bg-[#da2433] text-gray-50 font-light rounded-md text-lg flex flex-row items-center">
                 Close
                 <div className="bg-close h-4 w-4 ml-2 "></div>
               </button>
