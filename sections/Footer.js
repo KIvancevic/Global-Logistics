@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div className="text-center text-xs md:text-base text-gray-900 dark:text-gray-500 mx-auto sm:mx-0 order-last xl:order-none">
           <p>Copyrigth © {new Date().getFullYear()} Global Logistics US LLC. All rights reserved. </p>
-          <p>Powered by WeblaB</p>
+          <p>Powered by KikilaB</p>
         </div>
         <div className="flex flex-col items-center sm:items-end text-center text-xs sm:text-base text-gray-900 dark:text-gray-500 order-first xl:order-none">
             <GlobeAltIcon className="w-8 h-8 flex-shrink-0" />
