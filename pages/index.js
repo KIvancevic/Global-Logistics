@@ -6,6 +6,7 @@ import ForthSection from '../sections/SForthServices';
 import FifthSection from '../sections/SFifthCarriers';
 import SixthSection from '../sections/SSixLoveUs';
 import SeventhSection from '../sections/SSevenWhyGlobalLogisticsUS';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (

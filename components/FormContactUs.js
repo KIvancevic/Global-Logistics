@@ -91,7 +91,6 @@ export default function ContactUs(props) {
   };
   return (props.trigger) ? 
     (
-    <Fade bottom>
      <form
           onSubmit={handleSubmit}
           className="absolute z-10 rounded-lg flex flex-col px-8 py-8 h-auto w-auto 
@@ -221,7 +220,6 @@ export default function ContactUs(props) {
               </p>
             )}
           </div>
-        </form>
-      </Fade>
+        </form> 
     ) : "";
 }
