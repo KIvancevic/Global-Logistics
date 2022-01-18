@@ -47,10 +47,10 @@ const FifthSection = () => {
             </div>
             </Slide>
           </div>
-            <ContactUs 
+            {/* <ContactUs 
                 trigger={buttonDriveWithUs} 
                 setTrigger={setButtonDriveWithUs}
-              />
+              /> */}
             <div className="ml-0">
               <div className="text-center text-gray-900 dark:text-gray-50 font-semibold
                               uppercase text-5xl sm:text-6xl pt-10 customers2:pt-10">
