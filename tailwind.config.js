@@ -19,7 +19,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: theme => ({
-        "sectionOneVolvoTruck" : "linear-gradient(to right ,black, rgba(142, 121, 132, 0.3) 80rem, black 160rem), url('/volvo.jpg')",
+        "sectionOneVolvoTruck" : "linear-gradient(to right , black, #3b83f626 50vw, black 100vw), url('/volvo.jpg')",
         "highway" : "url('/HighwayAZ.jpg')",
         "truck" : "url('/semi3.png')",
         "quoteUp" : "url('/quoteUp.png')",
@@ -47,6 +47,7 @@ module.exports = {
         'carriers' : '851px',
         'mdlg' : '920px',
         'ifyoulooking' : '1078px',
+        'buttonForm': '1094px',
         'asterisk' : '1500px'
       },
       textShadow: {

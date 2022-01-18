@@ -11,16 +11,79 @@ body {
 .modal {
   width: clamp(50%, 700px, 90%);
   height: min(50%, 300px);
-
-  margin: auto;
   padding: 0 2rem;
   border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
 }
 
 
 .orange-gradient {
   background: var(--gradient);
+}
+
+/* Modal */
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.menu-bar {
+  width: 100%;
+  background-color: black;
+  height: 1px;
+  margin: 6px 0 6px auto;
+  z-index: 22;
+}
+
+.menu{
+  position: fixed;
+  top: 15em;
+  right: -14em;
+  bottom: 0;
+  width: 70%;
+  height: 100%;
+  z-index: 21;
+  transition: transform 0.8s cubic-bezier(0.25, 0.05, 0.1, 0.94);
+}
+
+.is-non-active {
+  transform: translateX(105%);
+  transition-delay: 2000ms;
+}
+.is-active {
+  transform: translateX(0);
+}
+
+.menu-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu-item {
+  font-size: 3.5vw;
+  color: #ffffff;
+  margin-bottom: 50px;
+  list-style: none;
+}
+
+.openedSvg {
+  position:absolute;
+  right: 44px;
+  top: 6px;
+  z-index: 100000;
+}
+
+.closedSvg {
+  color: black;
+  position:absolute;
+  right: 44px;
+  top: 10px;
+  z-index: 100000;
 }

@@ -1,12 +1,15 @@
+import { useState } from 'react';
 import Logo from '../components/Logo'
 import UserDarkMode from '../components/UseDarkMode';
+import { MenuButton } from '../components/BurgerMenu';
 
 const Header = () => {
   const [colorTheme, setTheme] = UserDarkMode();
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <header className="fixed w-screen border-opacity-25 dark:border-opacity-25 border-b border-blue-300 dark:border-blue-300 backdrop-filter backdrop-blur-sm  backdrop-contrast-200  bg-footerDark dark:bg-footerDark z-10">
-      <div className="conatiner mx-auto px-4 sm:px-6 py-2 flex justify-between items-center h-full">
+      <div className="relative conatiner mx-auto px-4 sm:px-6 py-2 flex justify-between items-center h-full">
         {/* Logo */}
         <Logo />
 
@@ -48,6 +51,20 @@ const Header = () => {
             />
           </svg>
           )}
+          <div
+           
+          >
+           <MenuButton
+              isOpen={isOpen}
+              onClick={() => setOpen(!isOpen)}
+              strokeWidth="4"
+              color="#93c5fd80"
+              lineProps={{ strokeLinecap: "round" }}
+              transition={{ type: "spring", stiffness: 260, damping: 20 }}
+              width="24"
+              height="33"
+            />
+          </div>
       </div>
     </header>
   );

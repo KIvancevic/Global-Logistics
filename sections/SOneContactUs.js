@@ -1,23 +1,25 @@
 import { useState } from 'react';
 import ContactUs from '../components/FormContactUs';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const FirstSection = () => {
 
   const [buttonContactUs, setButtonContactUs] = useState(false);
+  const [showModal, setShowModal] = useState(false)
 
-  return (
+  return ( 
+    <AnimatePresence exitBeforeEnter>
     <section className=" sm:bg-fixed relative h-screen w-full 
                           bg-no-repeat bg-center bg-cover bg-sectionOneVolvoTruck flex flex-col 
                           justify-center items-center space-y-10 ">
           {/* Headlines */}
             <div className="space-y-4 mx-auto text-center">
               <h1 className="text-4xl sm:text-7xl font-bold capitalize text-gray-900 dark:text-gray-200">
-                <span className="text-transparent text-footerDark text-shadow-ContactUs">
+                <span className="text-transparent text-footerDark ">
                   Global logistics US
                 </span>
               </h1>
-              <h2 className="text-2xl sm:text-2xl text-footerDark text-shadow-ContactUs">
+              <h2 className="text-2xl sm:text-2xl text-footerDark">
                 <span>Transportation Company</span>
               </h2>
             </div>
@@ -47,6 +49,7 @@ const FirstSection = () => {
               setTrigger={setButtonContactUs}
             />
       </section>
+      </AnimatePresence>
   )
 }
 
