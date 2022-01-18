@@ -68,7 +68,7 @@ const MenuButton = ({
       scale: 1,
       opacity: 1,
       transition: {
-        y: { stiffness: 1000, velocity: -100 }
+        y: { stiffness: 1000, velocity: -70 }
       }
     },
     closed: {
@@ -88,7 +88,7 @@ const MenuButton = ({
       transition: { staggerChildren: 0.3, delayChildren: 0.4 }
     },
     closed: {
-      transition: { staggerChildren: 0.5, staggerDirection: -1 }
+      transition: { staggerChildren: 0.3, staggerDirection: -1 }
     }
   };
 
@@ -101,7 +101,7 @@ const MenuButton = ({
   };
 
   return (
-    <div className="bg-index height-100vh">
+    <>
 
     <motion.div
       initial={false}
@@ -109,8 +109,8 @@ const MenuButton = ({
       variants={menuVariants}
       className={MenuClassName()}
     >
-      <div className="menu-container justify-center">
-        <div>
+      <div className="menu-container justify-end">
+        <div className="burgerItems">
           <ul>
             <motion.li className="menu-item" variants={variants}>
               MenuItem1
@@ -163,7 +163,7 @@ const MenuButton = ({
         {...lineProps}
       />
     </motion.svg>
-    </div>
+    </>
   );
 };
 

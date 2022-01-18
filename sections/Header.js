@@ -51,9 +51,7 @@ const Header = () => {
             />
           </svg>
           )}
-          <div
-           
-          >
+          <div>
            <MenuButton
               isOpen={isOpen}
               onClick={() => setOpen(!isOpen)}

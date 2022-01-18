@@ -6,6 +6,13 @@
 body {
   margin: 0;
   padding: 0;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .modal {
@@ -41,11 +48,10 @@ body {
 }
 
 .menu{
-  position: fixed;
-  top: 15em;
-  right: -14em;
+  position: absolute;
+  top: 38.7em;
+  right: 0;
   bottom: 0;
-  width: 70%;
   height: 100%;
   z-index: 21;
   transition: transform 0.8s cubic-bezier(0.25, 0.05, 0.1, 0.94);
@@ -67,10 +73,10 @@ body {
 }
 
 .menu-item {
-  font-size: 3.5vw;
+  font-size: 24px;
   color: #ffffff;
-  margin-bottom: 50px;
   list-style: none;
+  padding-bottom: 20px;
 }
 
 .openedSvg {
@@ -86,4 +92,14 @@ body {
   right: 44px;
   top: 10px;
   z-index: 100000;
+}
+
+.burgerItems {
+  background-color:#374151E6;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(10px) saturate(180%);
 }
