@@ -40,6 +40,9 @@ module.exports = {
       padding: {
         headings: '52.1rem'
       },
+      margin: {
+        '7.5em': '7.5em',
+      },
       screens: {
         'xs' : '320px',
         'customers1' : '1682px',

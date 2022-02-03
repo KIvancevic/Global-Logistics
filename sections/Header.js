@@ -19,7 +19,7 @@ const Header = () => {
             color="white"
             onClick={() => setTheme("light")}
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-6 w-6 mr-7 sm:mr-[7.5em]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -38,7 +38,7 @@ const Header = () => {
             cursor='pointer'
             onClick={() => setTheme("dark")}
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-6 w-6 mr-7 sm:mr-[7.5em]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -60,7 +60,7 @@ const Header = () => {
               lineProps={{ strokeLinecap: "round" }}
               transition={{ type: "spring", stiffness: 260, damping: 20 }}
               width="24"
-              height="33"
+              height="24"
             />
           </div>
       </div>

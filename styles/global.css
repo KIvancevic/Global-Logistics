@@ -58,7 +58,7 @@ body {
 
 .is-non-active {
   transform: translateX(105%);
-  transition-delay: 2000ms;
+  transition-delay: 1000ms;
 }
 .is-active {
   transform: translateX(0);
@@ -79,7 +79,7 @@ body {
 
 .openedSvg {
   position:absolute;
-  right: 44px;
+  right: 32px;
   top: 6px;
   z-index: 100000;
 }
@@ -87,9 +87,16 @@ body {
 .closedSvg {
   color: black;
   position:absolute;
-  right: 44px;
+  right: 32px;
   top: 10px;
   z-index: 100000;
+}
+
+@media screen and (min-width: 640px) {
+  .closedSvg,
+  .openedSvg {
+  right: 44px;
+  }
 }
 
 .burgerItems {
@@ -100,4 +107,17 @@ body {
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(10px) saturate(180%);
+}
+
+.logoMobileDevice {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .logoHidden {
+    display: none;
+  }
+  .logoMobileDevice {
+    display: block;
+  }
 }
