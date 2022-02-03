@@ -8,7 +8,6 @@ const FirstSection = () => {
   const [showModal, setShowModal] = useState(false)
 
   return ( 
-    <AnimatePresence exitBeforeEnter>
     <section className=" sm:bg-fixed relative h-screen w-full 
                           bg-no-repeat bg-center bg-cover bg-sectionOneVolvoTruck flex flex-col 
                           justify-center items-center space-y-10 ">
@@ -27,7 +26,7 @@ const FirstSection = () => {
           {/* CTA */}
           
 
-          <motion.div
+          {/* <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             className="save-button"
@@ -42,14 +41,14 @@ const FirstSection = () => {
               >
                 Contact us
             </button>
-          </motion.div>
+          </motion.div> */}
 
             {/* <ContactUs 
               trigger={buttonContactUs} 
               setTrigger={setButtonContactUs}
             /> */}
       </section>
-      </AnimatePresence>
+
   )
 }
 

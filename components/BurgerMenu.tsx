@@ -109,7 +109,7 @@ const MenuButton = ({
       variants={menuVariants}
       className={MenuClassName()}
     >
-      <div className="menu-container justify-end">
+      <div className="menu-container ">
         <div className="burgerItems">
           <ul>
             <motion.li className="menu-item" variants={variants}>
