@@ -135,8 +135,8 @@ const MenuButton = ({
               </Link>
               </motion.li>
             <motion.li className="menu-item" variants={variants}>
-              <Link href="/#">
-                <motion.a href="#"> 
+              <Link href="/">
+                <motion.a href="/"> 
                   Home
                 </motion.a>
               </Link>
