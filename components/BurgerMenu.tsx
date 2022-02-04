@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { motion, Transition } from "framer-motion";
 
@@ -10,6 +10,7 @@ interface Props {
   lineProps?: any;
   width?: any;
   height?: any;
+  setOpenTracker?:any;
 }
 
 const MenuButton = ({
@@ -24,6 +25,9 @@ const MenuButton = ({
 }: Props) => {
 
   const variant = isOpen ? "opened" : "closed";
+
+
+
 
   const top = {
     closed: {
@@ -113,28 +117,28 @@ const MenuButton = ({
       <div className="menu-container ">
         <div className="burgerItems">
           <ul>
-            <motion.li className="menu-item" variants={variants}>
+            <motion.li className="menu-item" variants={variants} onClick={() => props.setOpenTracker(!isOpen)}>
               <Link href="/carrers">
                 <motion.a href="/carrers"> 
                   Carrers
                 </motion.a>
               </Link>
             </motion.li>
-            <motion.li className="menu-item" variants={variants}>
+            <motion.li className="menu-item" variants={variants} onClick={() => props.setOpenTracker(!isOpen)}>
               <Link href="/contactUs">
                 <motion.a href="/contactUs">
                   Contact Us
                 </motion.a>
                 </Link>
             </motion.li>
-            <motion.li className="menu-item" variants={variants}>
+            <motion.li className="menu-item" variants={variants} onClick={() => props.setOpenTracker(!isOpen)}>
               <Link href="/aboutUs">
                 <motion.a href="/aboutUs">
                   About Us
                 </motion.a>
               </Link>
               </motion.li>
-            <motion.li className="menu-item" variants={variants}>
+            <motion.li className="menu-item" variants={variants} onClick={() => props.setOpenTracker(!isOpen)}>
               <Link href="/">
                 <motion.a href="/"> 
                   Home

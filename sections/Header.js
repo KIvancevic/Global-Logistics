@@ -55,6 +55,7 @@ const Header = () => {
            <MenuButton
               isOpen={isOpen}
               onClick={() => setOpen(!isOpen)}
+              setOpenTracker={setOpen}
               strokeWidth="4"
               color="#93c5fd80"
               lineProps={{ strokeLinecap: "round" }}
