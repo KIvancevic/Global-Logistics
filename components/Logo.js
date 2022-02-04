@@ -9,6 +9,14 @@ const Logo = () => {
         <span className="font-bold text-lg tracking-tight whitespace-nowrap logoHidden">
           Logistics US
         </span>
+        <div className="visibleInSmall">
+          <span>
+            a
+          </span>
+          <span>
+            a
+          </span>
+        </div>
       </a>
     </Link>
   )

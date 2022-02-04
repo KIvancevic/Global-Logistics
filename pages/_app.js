@@ -1,9 +1,16 @@
 import '../styles/global.css'
 import 'tailwindcss/tailwind.css'
+import { AnimatePresence } from 'framer-motion'
 
 function MyApp({ Component, pageProps }) {
   return (
-      <Component {...pageProps} />
+      <AnimatePresence
+        exitBeforeEnter
+        initial={false}
+        onExitComplete={() => window.scrollTo(0, 0)}
+      >
+        <Component {...pageProps} />
+      </AnimatePresence>
   )
 }
 

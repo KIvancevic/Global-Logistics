@@ -97,6 +97,11 @@ body {
   .openedSvg {
   right: 44px;
   }
+  .visibleInSmall {
+    color:red;
+    display:flex;
+    flex-direction: column;
+  }
 }
 
 .burgerItems {
@@ -109,7 +114,7 @@ body {
   backdrop-filter: blur(10px) saturate(180%);
 }
 
-.logoMobileDevice {
+.visibleInSmall {
   display: none;
 }
 
@@ -117,7 +122,5 @@ body {
   .logoHidden {
     display: none;
   }
-  .logoMobileDevice {
-    display: block;
-  }
+  
 }

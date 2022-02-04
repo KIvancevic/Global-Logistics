@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { motion, Transition } from "framer-motion";
 
 interface Props {
@@ -113,16 +114,32 @@ const MenuButton = ({
         <div className="burgerItems">
           <ul>
             <motion.li className="menu-item" variants={variants}>
-              MenuItem1
+              <Link href="/carrers">
+                <motion.a href="/carrers"> 
+                  Carrers
+                </motion.a>
+              </Link>
             </motion.li>
             <motion.li className="menu-item" variants={variants}>
-              MenuItem2
+              <Link href="/contactUs">
+                <motion.a href="/contactUs">
+                  Contact Us
+                </motion.a>
+                </Link>
             </motion.li>
             <motion.li className="menu-item" variants={variants}>
-              MenuItem3
-            </motion.li>
+              <Link href="/aboutUs">
+                <motion.a href="/aboutUs">
+                  About Us
+                </motion.a>
+              </Link>
+              </motion.li>
             <motion.li className="menu-item" variants={variants}>
-              MenuItem4
+              <Link href="/#">
+                <motion.a href="#"> 
+                  Home
+                </motion.a>
+              </Link>
             </motion.li>
           </ul>
         </div>
