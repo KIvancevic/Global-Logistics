@@ -2,15 +2,41 @@ import { useState } from 'react';
 import ContactUs from '../components/FormContactUs';
 import { motion, AnimatePresence } from 'framer-motion';
 
+
+const containerVariants ={
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.8
+    }
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      ease: 'easeInOut',
+      delay: 0.8
+    }
+  }
+}
+
 const FirstSection = () => {
 
   const [buttonContactUs, setButtonContactUs] = useState(false);
   const [showModal, setShowModal] = useState(false)
 
   return ( 
-    <section className=" sm:bg-fixed relative h-screen w-full 
+    <motion.section className=" sm:bg-fixed relative h-screen w-full 
                           bg-no-repeat bg-center bg-cover bg-sectionOneVolvoTruck flex flex-col 
-                          justify-center items-center space-y-10 ">
+                          justify-center items-center space-y-10 "
+                          variants={containerVariants}
+                          initial="hidden"
+                          animate="visible"
+                          exit="exit"
+                   
+    >
           {/* Headlines */}
             <div className="space-y-4 mx-auto text-center">
               <h1 className="text-4xl sm:text-7xl font-bold capitalize text-gray-900 dark:text-gray-200">
@@ -47,8 +73,7 @@ const FirstSection = () => {
               trigger={buttonContactUs} 
               setTrigger={setButtonContactUs}
             /> */}
-      </section>
-
+      </motion.section>
   )
 }
 

@@ -77,6 +77,16 @@ body {
   padding-bottom: 20px;
 }
 
+.headerTransition {
+  top: 0px;
+  transition: top 0.3s ease-in-out; 
+}
+
+.headerClosed {
+  top: -44px;
+  transition: top 0.3s ease-in-out; 
+}
+
 .openedSvg {
   position:absolute;
   right: 32px;

@@ -1,14 +1,33 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Logo from '../components/Logo'
 import UserDarkMode from '../components/UseDarkMode';
 import { MenuButton } from '../components/BurgerMenu';
+import { motion } from 'framer-motion';
+import useScrollListener from '../components/ScrollListener';
 
 const Header = () => {
   const [colorTheme, setTheme] = UserDarkMode();
   const [isOpen, setOpen] = useState(false);
 
+  const [isVisible, setIsVisible] = useState(true)
+  const scroll = useScrollListener();
+
+  // update classList of nav on scroll
+  useEffect(() => {
+
+    if (scroll.y > 150 && scroll.y - scroll.lastY > 0)
+      setIsVisible(false);
+
+      else { setIsVisible(true)};
+
+  }, [scroll.y, scroll.lastY]);
+
+
   return (
-    <header className="fixed w-screen border-opacity-25 dark:border-opacity-25 border-b border-blue-300 dark:border-blue-300 backdrop-filter backdrop-blur-sm  backdrop-contrast-200  bg-footerDark dark:bg-footerDark z-10">
+    <motion.header 
+      className={"fixed w-screen border-opacity-25 dark:border-opacity-25 border-b border-blue-300 dark:border-blue-300 backdrop-filter backdrop-blur-sm backdrop-contrast-200  bg-footerDark dark:bg-footerDark z-50 " 
+      + (!isVisible ? "headerClosed" : "headerTransition")}
+      >
       <div className="relative conatiner mx-auto px-4 sm:px-6 py-2 flex justify-between items-center h-full">
         {/* Logo */}
         <Logo />
@@ -65,7 +84,7 @@ const Header = () => {
             />
           </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
 

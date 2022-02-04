@@ -6,6 +6,7 @@ import ForthSection from '../sections/SForthServices';
 import FifthSection from '../sections/SFifthCarriers';
 import SixthSection from '../sections/SSixLoveUs';
 import SeventhSection from '../sections/SSevenWhyGlobalLogisticsUS';
+import { motion } from 'framer-motion';
 
 
 export default function Home() {
@@ -13,7 +14,10 @@ export default function Home() {
 
   return (
     <>
-     <div className="transition duration-1000 ease-in-out dark:bg-gray-900 bg-gray-200">
+     <motion.div 
+      className="transition duration-1000 ease-in-out dark:bg-gray-900 bg-gray-200"
+      exit={{ opacity: 0 }}
+     >
       {/* Hero section */}
 
       <FirstSection />
@@ -30,7 +34,7 @@ export default function Home() {
 
       <SeventhSection />
 
-     </div>
+     </motion.div>
     </>
   );
 }
