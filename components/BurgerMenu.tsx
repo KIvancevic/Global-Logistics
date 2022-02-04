@@ -26,9 +26,6 @@ const MenuButton = ({
 
   const variant = isOpen ? "opened" : "closed";
 
-
-
-
   const top = {
     closed: {
       rotate: 0,
@@ -58,6 +55,14 @@ const MenuButton = ({
     }
   };
 
+  const liVariants = {
+    hover: {
+      scale: 1.2, 
+      originX: 0,  
+      textShadow: "0px 0px 8px rgb(255, 255, 255)",
+    },
+  };
+
   lineProps = {
     stroke: color,
     strokeWidth: strokeWidth as number,
@@ -68,22 +73,8 @@ const MenuButton = ({
     ...lineProps
   };
 
-  const variants = {
-    open: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        y: { stiffness: 1000, velocity: -70 }
-      }
-    },
-    closed: {
-      scale: 0.2,
-      opacity: 0,
-      transition: {
-        y: { stiffness: 1000 }
-      }
-    }
-  };
+  
+
   
   const unitHeight = 4;
   const unitWidth = (unitHeight * (width as number)) / (height as number);
@@ -117,28 +108,48 @@ const MenuButton = ({
       <div className="menu-container ">
         <div className="burgerItems">
           <ul>
-            <motion.li className="menu-item" variants={variants} onClick={() => props.setOpenTracker(!isOpen)}>
+            <motion.li className="menu-item" 
+                        variants={liVariants} 
+                        whileHover="hover"
+                        transition={{ type: 'spring', stiffness: 300}}
+                        onClick={() => props.setOpenTracker(!isOpen)}
+            >
               <Link href="/carrers">
                 <motion.a href="/carrers"> 
                   Carrers
                 </motion.a>
               </Link>
             </motion.li>
-            <motion.li className="menu-item" variants={variants} onClick={() => props.setOpenTracker(!isOpen)}>
+            <motion.li className="menu-item" 
+                        variants={liVariants} 
+                        whileHover="hover"
+                        transition={{ type: 'spring', stiffness: 300}}
+                        onClick={() => props.setOpenTracker(!isOpen)}
+              >
               <Link href="/contactUs">
                 <motion.a href="/contactUs">
                   Contact Us
                 </motion.a>
                 </Link>
             </motion.li>
-            <motion.li className="menu-item" variants={variants} onClick={() => props.setOpenTracker(!isOpen)}>
+            <motion.li className="menu-item"
+                        variants={liVariants} 
+                        whileHover="hover"
+                        transition={{ type: 'spring', stiffness: 300}}
+                        onClick={() => props.setOpenTracker(!isOpen)}
+            >
               <Link href="/aboutUs">
                 <motion.a href="/aboutUs">
                   About Us
                 </motion.a>
               </Link>
               </motion.li>
-            <motion.li className="menu-item" variants={variants} onClick={() => props.setOpenTracker(!isOpen)}>
+            <motion.li className="menu-item" 
+                        variants={liVariants} 
+                        whileHover="hover"
+                        transition={{ type: 'spring', stiffness: 300}}
+                        onClick={() => props.setOpenTracker(!isOpen)}
+            >
               <Link href="/">
                 <motion.a href="/"> 
                   Home
